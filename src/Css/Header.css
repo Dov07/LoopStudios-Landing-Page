@@ -1,0 +1,99 @@
+.header-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    width: 100%;
+    height: auto;
+    min-height: 48rem;
+    
+}
+
+.background-img{
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.background-img img{
+    width: 100%;
+}
+.logo{
+    position: relative;
+    z-index: 1000;
+}
+.logo a img{
+    height: 1.8rem;
+}
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    align-items: center;
+}
+.hamburger-btn{
+    width: 1.5rem;
+    position: relative;
+    z-index: 2222;
+    background: none;
+    border: none;
+
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    padding: 15rem 1rem;
+    top: 0rem;
+    right: 0rem;
+    background-color: var(--Black);
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+nav ul{
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--Grey200);
+    font-size: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.hero-content{
+    position: relative;
+    padding: 1rem;
+    z-index: -1;
+}
+.wrapper-content{
+    width: auto;
+    height: auto;
+    padding: 1.5rem;
+    border: 1px solid var(--White);
+
+}
+
+.wrapper-content h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 400;
+    font-family: 'Josefin Sans', 'sans-serif';
+}
