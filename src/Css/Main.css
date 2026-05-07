@@ -60,7 +60,7 @@ main,
 }
 
 .gallery-wrapper p {
-   width: min(10rem, 80vw);
+    max-width: 8.2ch;
     height: auto;
     position: absolute;
     bottom: 1rem;
@@ -86,3 +86,103 @@ main,
 
     cursor: pointer;
 }
+
+@media (min-width:768px) {
+    main {
+        padding: 6rem;
+    }
+
+    .top-hero-img {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        align-items: end;
+    }
+
+    .top-hero-img img {
+        grid-column: 1 / 14;
+        grid-row: 1;
+    }
+
+    .top-hero-desc {
+        grid-column: 10/20;
+        grid-row: 1;
+        background-color: var(--White);
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .top-hero-desc-wrapper{
+        padding: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+    }
+
+
+
+    .top-hero-desc-wrapper h2 {
+        text-align: left;
+        font-size: 3rem
+    }
+
+    .top-hero-desc-wrapper p {
+        text-align: left;
+        font-size: 1.3rem;
+        color: var(--Black);
+        display: flex;
+        justify-content: flex-end;
+    }
+ 
+
+    .bottom-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+            "title button"
+            "gallery gallery";
+        row-gap: 4rem;
+        align-items: center;
+    }
+
+    .bottom-gallery h2 {
+        grid-area: title;
+        text-align: left; 
+        font-size: 3rem;
+    }
+
+    .seeAll {
+        grid-area: button;
+        justify-self: end; 
+        padding: 0.8rem 3rem;
+    }
+
+    .gallery {
+        grid-area: gallery;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+    
+    .gallery-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 40%, rgba(0, 0, 0, 0.7));
+    z-index: 1; 
+}
+
+
+    .gallery-wrapper p {
+        font-size: 2rem;
+        text-align: left;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 30;
+    }
+}
+

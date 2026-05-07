@@ -6,7 +6,7 @@
     width: 100%;
     height: auto;
     min-height: 48rem;
-    
+    overflow: hidden;
 }
 
 .background-img{
@@ -95,4 +95,37 @@ nav ul li a{
     font-weight: 400;
     font-family: 'Josefin Sans', 'sans-serif';
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .header-wrapper{
+          overflow: visible;
+    }
+
+    .hamburger-btn{
+        display: none;
+    }
+
+    nav{
+        opacity: 100%;
+        visibility: visible;
+        background-color: transparent;
+        transition: none;
+        position: static;
+        
+        padding: 0rem;
+    }
+    nav ul{
+        display: flex;
+        justify-content: end;
+    }
+
+    nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--Grey200);
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
 }
