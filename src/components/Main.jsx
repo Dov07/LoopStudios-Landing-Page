@@ -19,12 +19,15 @@ const Main = () => {
         </h2>
         <div className='gallery'>
           {gallery.map((item) => (
-            <div key={item.id}>
+            <div className='gallery-wrapper' key={item.id}>
               <img src={item.mobileImg} alt={item.alt} />
               <p>{item.alt}</p>
             </div>
           ))}
         </div>
+        
+          <button className='seeAll'>See ALL</button>
+        
       </div>
     </main>
   )

@@ -12,7 +12,7 @@ const Navlink = ["About", "Careers", "Event", "Products", "Support"]
     <div >
       <Header Navlink={Navlink}/>
       <Main/>
-      <Footer/>
+      <Footer Navlink={Navlink}/>
     </div>
   )
 }

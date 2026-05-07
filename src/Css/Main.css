@@ -1,32 +1,88 @@
-main{
+main {
+    gap: 3rem;
     padding: 1.5rem;
 }
 
-.top-hero-img{
-    width: 100%;
+main,
+.top-hero-desc,
+.bottom-gallery,
+.gallery-wrapper,
+.gallery {
     display: flex;
     flex-direction: column;
+}
+
+.top-hero-img {
+    width: 100%;
     gap: 2rem;
 }
-.top-hero-img img{
+
+.top-hero-img img {
     width: 100%;
 }
 
-.top-hero-desc{
-    display: flex;
-    flex-direction: column;
+.top-hero-desc {
     gap: 1rem;
     padding: 1.5rem;
 }
-.top-hero-desc h2{
+
+.top-hero-desc h2 {
     font-size: 2rem;
     font-family: 'Josefin Sans', 'sans-serif';
     text-transform: uppercase;
     text-align: center;
 }
-.top-hero-desc p{
-        font-size: 1.5rem;
-            text-align: center;
-            color: var(--Grey200);
 
+.top-hero-desc p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--Grey200);
+
+}
+
+.bottom-gallery {
+    gap: 2rem;
+}
+
+.bottom-gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', 'sans-serif';
+}
+
+.gallery {
+    gap: 2rem;
+}
+
+.gallery-wrapper {
+    position: relative;
+}
+
+.gallery-wrapper p {
+   width: min(10rem, 80vw);
+    height: auto;
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', 'sans-serif';
+    color: var(--White);
+}
+
+.seeAll {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: auto;
+    padding: 1rem 2.5rem;
+    background: none;
+    border: 1px solid var(--Black);
+    text-transform: uppercase;
+    font-family: 'Josefin Sans', 'sans-serif';
+    letter-spacing: 0.4rem;
+    font-weight: 700;
+
+    cursor: pointer;
 }
