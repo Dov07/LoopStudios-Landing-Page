@@ -82,18 +82,17 @@ nav ul li a{
     padding: 1rem;
     z-index: -1;
 }
-.wrapper-content{
-    width: auto;
-    height: auto;
+
+.hero-content h1{
+    
+    width: min(100%, 42rem);
+    max-width: 90vw;
     padding: 1.5rem;
     border: 1px solid var(--White);
-
-}
-
-.wrapper-content h1{
-    font-size: 3rem;
+    font-size: clamp(2rem, 7vw, 3.5rem);
     text-transform: uppercase;
     color: var(--White);
     font-weight: 400;
     font-family: 'Josefin Sans', 'sans-serif';
+    margin: 0;
 }

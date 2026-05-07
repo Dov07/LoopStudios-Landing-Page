@@ -1,9 +1,9 @@
 import React from 'react'
 import { useToggle } from '@uidotdev/usehooks'
-import logo from '../assets/images/logo.svg'
-import hamburger from '../assets/images/icon-hamburger.svg'
-import closeIcon from '../assets/images/icon-close.svg'
-import bgImg from '../assets/images/mobile/image-hero.jpg'
+import logo from '../assets/iconPhotos/logo.svg'
+import hamburger from '../assets/iconPhotos/icon-hamburger.svg'
+import closeIcon from '../assets/iconPhotos/icon-close.svg'
+import bgImg from '../assets/image-hero.jpg'
 import '../Css/Header.css'
 const Header = ({ Navlink }) => {
 
@@ -48,9 +48,9 @@ const Header = ({ Navlink }) => {
       </header>
 
       <div className="hero-content">
-             <div className='wrapper-content'> 
+             
         <h1>Immersive experiences that deliver</h1>
-        </div>  
+       
       </div>
     </div>
   )
