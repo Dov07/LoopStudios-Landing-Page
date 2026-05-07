@@ -5,6 +5,9 @@ footer{
     align-items: center;
     gap: 4rem;
 }
+
+
+ 
 footer, .footer-top{
  display: flex;
     flex-direction: column;
@@ -41,4 +44,38 @@ footer, .footer-top{
     font-size: 1rem;
     color: var(--Grey200);
         font-family: 'Josefin Sans', 'sans-serif';
+}
+
+
+
+@media (min-width:768px) {
+    footer{
+        width: 100%;
+        padding: 3rem 5rem;
+          align-items: baseline;
+          display: grid;
+          grid-template-columns: 1fr, 1fr;
+          grid-template-areas:
+           "logo social"
+           "link text";
+        justify-content: space-between;
+    }
+    
+
+    .footer-top{
+        grid-area: logo;
+        width: 100%;
+        display: flex;
+    }
+    .nav-link-footer ul{
+        display: flex;
+    }
+    .social-links{
+        grid-area: social;
+    }
+
+    .footer-bottom-p{
+        grid-area: text ;
+        
+    }
 }
