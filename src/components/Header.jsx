@@ -3,8 +3,6 @@ import { useToggle, useWindowSize } from '@uidotdev/usehooks'
 import logo from '../assets/iconPhotos/logo.svg'
 import hamburger from '../assets/iconPhotos/icon-hamburger.svg'
 import closeIcon from '../assets/iconPhotos/icon-close.svg'
-import bgImg from '../assets/image-hero.jpg'
-import bgWeb from '../assets/image-hero-w.jpg'
 import '../Css/Header.css'
 const Header = ({ Navlink }) => {
 
@@ -20,10 +18,6 @@ const Header = ({ Navlink }) => {
 
   return (
     <div className='header-wrapper'>
-      <div className='background-img'>
-
-        <img src={width >= 768 ? bgWeb : bgImg} alt="Hero Background" />
-      </div>
       <header className="header">
 
         <div className="logo">
