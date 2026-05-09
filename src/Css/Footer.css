@@ -51,7 +51,7 @@ footer, .footer-top{
 @media (min-width:768px) {
     footer{
         width: 100%;
-        padding: 3rem 5rem;
+        padding: 3rem 5.5rem;
           align-items: baseline;
           display: grid;
           grid-template-columns: 1fr, 1fr;
@@ -78,4 +78,8 @@ footer, .footer-top{
         grid-area: text ;
         
     }
+
+
+
+
 }

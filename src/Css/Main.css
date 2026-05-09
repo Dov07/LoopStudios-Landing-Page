@@ -53,6 +53,8 @@ main,
 
 .gallery {
     gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .gallery-wrapper {
@@ -94,7 +96,7 @@ main,
 
     .top-hero-img {
         display: grid;
-        grid-template-columns: repeat(20, 1fr);
+        grid-template-columns: repeat(20, minmax(0, 1fr));
         align-items: end;
     }
 
@@ -124,12 +126,12 @@ main,
 
     .top-hero-desc-wrapper h2 {
         text-align: left;
-        font-size: 3rem
+        font-size: 3vmax;
     }
 
     .top-hero-desc-wrapper p {
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.4vmax;
         color: var(--Black);
         display: flex;
         justify-content: flex-end;
@@ -160,9 +162,6 @@ main,
 
     .gallery {
         grid-area: gallery;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
     }
     
     .gallery-wrapper::after {
@@ -185,4 +184,3 @@ main,
         z-index: 30;
     }
 }
-
